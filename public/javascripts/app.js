@@ -10,8 +10,12 @@ angular.module('comment', [])
       $scope.create({
         title: $scope.formContent,
         upvotes: 0,
+	price: $scope.formPrice,
+	url: $scope.formURL,
       });
       $scope.formContent = '';
+	 $scope.formURL = '';
+	 $scope.formPrice = '';
    };
    
    $scope.upvote = function(comment) {
