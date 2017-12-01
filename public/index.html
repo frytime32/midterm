@@ -27,7 +27,8 @@
       <div ng-repeat="comment in comments | orderBy: '-upvotes'">
         <span class="glyphicon glyphicon-remove" ng-click="delete(comment)"></span>
      <!--   <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span>  --> 
-	{{comment.title}} - ordered: {{comment.upvotes}}
+	{{comment.title}} - ordered: {{comment.upvotes}} - price {{comment.price}}
+	<img ng-src="{{comment.url}}" />
       </div>
     </div>
   </div>
