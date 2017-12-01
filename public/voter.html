@@ -7,17 +7,17 @@
 </head>
 <body ng-app="voting" ng-controller="MainCtrl">
 <div style="margin-left: 5em;">
-<h1> Voter Interface </h1>
+<h1>Shopping Interface</h1>
 
-<h1>Current Candidates</h1>
+<h1>Current Products</h1>
 <div ng-repeat="candidate in candidates | orderBy: 'title'">
 <input type="checkbox" ng-model="candidate.selected">  {{candidate.title}}
 </div>
 <button ng-click="dovote()">
-Submit Votes
+Submit Purchase
 </button>
 
-<h1>Submitted Ballot</h1>
+<h1>Shopping Cart</h1>
 <div ng-repeat="candidate in ballot | orderBy: 'title'">
 {{candidate.title}}
 </div>
